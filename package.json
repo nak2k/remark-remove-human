@@ -23,6 +23,7 @@
     "prebuild": "npm run clean",
     "build": "tsc",
     "clean": "rm -rf lib",
+    "prepack": "npm run build && npm run test",
     "test": "node --test test/**/*.ts",
     "format": "remark . --use remark-api --output"
   },
