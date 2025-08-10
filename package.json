@@ -1,0 +1,48 @@
+{
+  "name": "remark-remove-human",
+  "version": "0.1.0",
+  "description": "remark plugin to remove sections and code blocks for human",
+  "type": "module",
+  "keywords": [],
+  "homepage": "https://github.com/nak2k/remark-remove-human",
+  "bugs": {
+    "url": "https://github.com/nak2k/remark-remove-human/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nak2k/remark-remove-human.git"
+  },
+  "license": "MIT",
+  "author": "Kengo Nakatsuka <kengo.nakatsuka@gmail.com>",
+  "main": "lib",
+  "files": [
+    "README.md",
+    "lib/"
+  ],
+  "scripts": {
+    "prebuild": "npm run clean",
+    "build": "tsc",
+    "clean": "rm -rf lib",
+    "test": "node --test test/**/*.ts",
+    "format": "remark . --use remark-api --output"
+  },
+  "dependencies": {
+    "mdast-util-to-string": "^4.0.0",
+    "unist-util-visit": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/mdast": "^4.0.4",
+    "@types/node": "^24.2.1",
+    "remark": "^15.0.1",
+    "remark-api": "^1.1.0",
+    "remark-cli": "^12.0.1",
+    "remark-code-import": "^1.2.0",
+    "typescript": "^5.9.2"
+  },
+  "remarkConfig": {
+    "plugins": [
+      "remark-api",
+      "remark-code-import"
+    ]
+  }
+}
