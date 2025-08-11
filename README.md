@@ -6,6 +6,8 @@ However, there are still cases where we want to include human-readable content w
 
 This [remark](https://github.com/remarkjs/remark) plugin provides the ability to remove human-readable content from markdown files, making markdown useful for both humans and AI.
 
+<img src="./docs/images/diff.png" />
+
 ## Installation
 
 ```bash

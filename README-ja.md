@@ -6,6 +6,8 @@ markdown はもはや AI のためのものです。
 
 この Remark プラグインは、markdown ファイルから人間が読むためのコンテンツを削除する機能を提供することで、markdown を引き続き、人間にとっても AI にとっても有用なものにします。
 
+<img src="./docs/images/diff.png" />
+
 ## Installation
 
 ```bash
